@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1230px){
+    .nome-site p{
+        font-size: 28px;
+        white-space: nowrap;
+        padding-top: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nome-site p{
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    .cabecalho{
+        position: relative;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        height:200px;
+        width: 40vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #d9d9d9;
+    }
+    .menu a{
+    font-size:14px
+    }
+    .menu-toggle{
+        display: flex;
+        height: 70px;
+        width: 70px;
+        padding-right: 20px;
+    }
+    .menu-navbar a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .banner img{
+        height: 380px;
+        width: 580px;
+        border-radius: 20px;
+        padding-left: 5px;
+    }
+    .conteudo-banner{
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .barra-pesquisa{
+        display: none;
+    }
+    .barra-pesquisa-toggle{
+        display: flex;
+        height: 60px;
+        width: 60px;
+    }
+    .barra-pesquisa-toggle img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .menu-navbar{
+        display: none;
+    }
+    header{
+        height: 100px;
+    }
+    .banner{
+        display: none;
+    }
+    .banner-toggle{
+        background-color: #0f044e;
+        color: white;
+        display: flex;
+        height: 500px;
+    }
+    .banner-toggle img{
+        height: 300px;
+        width: 400px;
+        border-radius: 15px;
+    }
+    .banner-toggle p{
+        font-size: 18px;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    .produtos-mais-vendidos, .produtos-ofertas{
+        flex-direction: column;
+    }
+    .ofertas{
+        padding-top: 20px;
+    }
+    .ofertas, .mais-vendidos{
+        height: 1650px;
+    }
+    .rodape{
+        display: inline;
+    }
+}

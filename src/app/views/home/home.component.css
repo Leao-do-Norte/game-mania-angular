@@ -1,0 +1,320 @@
+/* O "reset" e os "media queries" foram transferidos para ./src/style.css*/
+
+header{
+    background-color: #d9d9d9;
+    height: 130px;
+    align-items: center;
+}
+
+header input{
+    border-radius: 30px;
+    border: 1px solid black;
+    height: 25px;
+    width: 250px;
+}
+
+.barra-pesquisa img{
+    height: 25px;
+    width: 25x;
+    border-radius: 25px;
+}
+
+.barra-pesquisa{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-pesquisa-toggle{
+    display: none;
+}
+
+.container-grid{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+.cabecalho p{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.nome-site p{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+
+.nome-site a{
+    text-decoration: none;
+}
+.logo-nome{
+    display: flex;
+}
+
+.logo-nome img{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.menu{
+    justify-content: space-between;
+    display: flex;
+    width: 500px;
+}
+
+.menu a, p{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-navbar{
+    border-top: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 30px;
+}
+
+.menu-navbar a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.banner{
+    height: 500px;
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-color: #0f044e;
+    background-size: cover;
+}
+
+.banner-toggle{
+    display: none;
+}
+
+.banner img{
+    border-radius: 25px;
+    padding-left: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+.conteudo-banner{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.conteudo-banner a{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    background-color: #080708;
+    color: #FF0022;
+    padding: 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.conteudo-banner p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.posicionamento-banner{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    text-decoration: underline overline;
+    color: white;
+}
+
+main h3{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+
+.card{
+    flex-direction: column;
+}
+
+main button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.ofertas button, .mais-vendidos button{
+    background-color: #0f044e;
+}
+
+.ofertas{
+    height: 570px;
+    background-color: #0f044e;
+}
+
+p.preco>del{
+    opacity: 0.4;
+}
+
+.mais-vendidos{
+    height: 520px;
+    background-color: #0f044e;
+}
+
+.mais-vendidos img, .ofertas img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.mais-vendidos p, .ofertas p{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.ofertas button:hover, .mais-vendidos button:hover{
+    transform: scale(1.1);
+}
+
+.produtos-mais-vendidos, .produtos-ofertas{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0f044e;
+}
+
+footer{
+    background-color: #d9d9d9;
+}
+
+.rodape{
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape p{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.rodape h3{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.rodape img{
+    border-radius: 10px;
+    width: 50px;
+    height:50px;
+}
+
+.secao-rodape{
+    flex-direction: column;
+}
+
+.secao-contato p, a{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: lowercase;
+    line-height: 10px;
+}
+
+.secao-contato img, .redes-sociais img{
+    margin: 10px;
+}
+
+.localizacao p{
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.redes-sociais p, a{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: lowercase;
+}
+
+#voltar-ao-topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#voltar-ao-topo img, footer button{
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
