@@ -1,0 +1,82 @@
+footer{
+    background-color: #d9d9d9;
+}
+
+.rodape{
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.rodape p{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.rodape h3{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.rodape img{
+    border-radius: 10px;
+    width: 50px;
+    height:50px;
+}
+
+.secao-rodape{
+    flex-direction: column;
+}
+
+.secao-contato p, a{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: lowercase;
+    line-height: 10px;
+}
+
+.secao-contato img, .redes-sociais img{
+    margin: 10px;
+}
+
+.localizacao p{
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.redes-sociais p, a{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: lowercase;
+}
+
+#voltar-ao-topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#voltar-ao-topo img, footer button{
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}

@@ -1,0 +1,42 @@
+<app-header></app-header>
+<main>
+    <div class="formularios">
+        <div class="login">
+            <h1>Login do Usuário</h1>
+            <form (ngSubmit)="receberDados()">
+                <label for="email-example">E-mail</label>
+                <input type="email" name="email" id="email-example" [(ngModel)]="userModel.email">
+                <br><br>
+                <label for="password-example">Senha</label>
+                <input type="password" name="password" id="password-example" [(ngModel)]="userModel.password">
+                <br><br>
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="cadastro">  
+            <h1>Ainda não possui uma conta?</h1>
+                <form>
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name">
+                    <br><br>
+                    <label for="tel">Telefone (opcional)</label>
+                    <input type="tel" id="tel" name="tel" maxlength="11">
+                    <br><br>
+                    <label for="adress">Endereço</label>
+                    <input type="text" id="adress">
+                    <br><br>
+                    <label for="email-example-2">E-mail</label>
+                    <input type="email" id="email-example-2">
+                    <br><br>
+                    <label for="password-example1">Senha</label>
+                    <input type="password" id="password-example1">
+                    <br><br>
+                    <label for="password-example2">Repita a senha</label>
+                    <input type="password" id="password-example2">
+                    <br><br>
+                    <button onclick="cadastrarUsuario()">Enviar</button>
+                </form>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

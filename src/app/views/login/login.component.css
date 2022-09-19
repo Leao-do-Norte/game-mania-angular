@@ -1,0 +1,43 @@
+main{
+    background-color: #0f044e;
+    color: white;
+}
+
+main form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+main h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    padding-top: 25px;
+}
+
+main input{
+    height: 22px;
+}
+
+main button{
+    padding: 2px 7px 2px 7px;
+}
+
+.formularios{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 30px 0;
+}
+
+.login form{
+    text-align: left;
+}
+
+.cadastro form{
+    text-align: right;
+}
+
+.login{
+    padding-left: 25%;
+}
