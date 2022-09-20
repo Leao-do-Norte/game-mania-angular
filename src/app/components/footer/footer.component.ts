@@ -12,4 +12,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  voltarAoTopo(){
+    scrollTo(0,0);
+  }
 }
