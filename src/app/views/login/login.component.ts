@@ -19,7 +19,19 @@ export class LoginComponent implements OnInit {
 
   mensagem = ""
 
-  receberDados() {this.loginService.login (this.userModel).subscribe((response) => {
+  receberDados() {
+    //BLACKLIST
+    const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", " group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
+    listaPalavras.forEach(palavra=>{
+      if(this.userModel.email?.toLowerCase().includes(palavra)){
+        this.mensagem = "Dados inválidos: " + palavra
+
+        return;
+      }
+    });
+
+    //MENSAGEM DE AUTENTICAÇÃO DO EMAIL
+    this.loginService.login (this.userModel).subscribe((response) => {
     console.log("Deu certo") 
     this.router.navigateByUrl("/")
     }, 
