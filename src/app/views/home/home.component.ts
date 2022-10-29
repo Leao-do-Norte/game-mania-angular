@@ -17,10 +17,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    let r = confirm("Seja bem-vindo ao Game Mania! \nDeseja se inscrever na nossa Newsletter e aproveitar as melhores promoções?");
-    if (r == true){
-        prompt("Digite seu e-mail e fique por dentro das novidades!")
-      }
+    // let r = confirm("Seja bem-vindo ao Game Mania! \nDeseja se inscrever na nossa Newsletter e aproveitar as melhores promoções?");
+    // if (r == true){
+    //     prompt("Digite seu e-mail e fique por dentro das novidades!")
+    //   }
   }
 
   consultarFrete(){
